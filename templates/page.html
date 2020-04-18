@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  VI3W
+{% endblock %}
+
+{% block body %}
+
+<h1>Book Details <span style="font-size:20px"><a href = "{{url_for('query')}}">Go back to search</a></span></h1>
+
+<ul>
+    <li>ISBN: {{ about.isbn }}</li>
+    <li>TITLE: {{ about.title}}</li>
+    <li>AUTHOR: {{ about.author}}</li>
+    <li>YEAR: {{about.year}} </li>
+    <li>#OF RATINGS: {{count}} </li>
+    <LI>AVG. RATING: {{average}} </li>
+</ul>
+
+<form action="{{url_for('page', info=about.isbn)}}" id = "op"  method = "post">
+  Rating:
+  <input type="number" name="rating" min="1.0" max="5.0"
+  <br>
+  <button type="submit">Submit</button>
+  </form>
+  <br>
+  <textarea rows="4" cols="50" name="review"
+  form ="op">
+  Enter text here...</textarea>
+
+  <div class = container style="margin:0px; border: 2px solid black">
+   {% for rev in reviews %}
+    <p style="word-spacing:15px"> {{rev.name}}  {{rev.rating}}/5.0 </p>
+    <p> {{rev.review}} </p>
+   {% endfor %}
+  </div>
+{% endblock %}

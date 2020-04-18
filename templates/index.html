@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  VI3W
+{% endblock %}
+
+{% block body %}
+
+   <h1> Getting Started! <h1>
+     <p>Hello! Welcome to VI3W!!! The best online
+     book review website on the planet! Select from thousands
+     of books today and see what needs to be in your catalogue!
+     </p>
+
+    <h2> <a href = "{{url_for('create')}}">Sign up </a> </h2>
+     <h2> <a href = "{{url_for('incumbent')}}"> Login </a> </h2>
+
+     <h2> {{message}} <h2>
+
+{% endblock %}

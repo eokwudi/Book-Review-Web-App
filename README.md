@@ -14,8 +14,7 @@ The file contains a template folder that houses all the html pages used in the m
 
 The application.py file contains various methods that when accessed will execute code that will allow for
 user interaction to result in some action to be performed on the website. The names of the routes and the name of the
-html pages have been named to be rather obvious as to what they pertain to and if that is not the case the code is robust and
-the database's are conveniently named.
+html pages have been named to be rather obvious as to what they pertain to, but the code and databases should give a good idea of what is going on.
 
 Again, this is pretty rough but its my first time making a web app using interactive modules!
 

@@ -19,4 +19,3 @@ the database's are conveniently named.
 
 Again, this is pretty rough but its my first time making a web app using interactive modules!
 
-#Warren Farrel
